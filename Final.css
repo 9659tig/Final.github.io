@@ -1,0 +1,96 @@
+.name, .welcome, .weather, .coment, section{
+  display: none;
+}
+.showing{
+  display: block;
+}
+.bgImg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+body{
+  background-color: skyblue;
+  min-width: 1100px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header{
+  position: relative;
+  height: 150px;
+}
+.wBtn{
+  position: absolute;
+  left: 45px;
+  top: 160px;
+}
+.W{
+  border-radius: 20px;
+}
+.dates{
+  position: absolute;
+  top: 10%;
+  left: 5px;
+  margin: 0;
+  list-style: none;
+  font-size: 35px;
+  color:rgb(0,0,0,0);
+  text-shadow: 0 0 2px #f00;
+}
+h1{
+  font-size: 70px;
+  display: inline-block;
+  background-color: #EBE2C0;
+  border: 10px solid #8394F2;
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-110%);
+  top: 10%;
+  margin: 0;
+}
+.test{
+  font-size: 40px;
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  transform: translateX(110%);
+}
+.test h3{
+  margin: 0;
+}
+section{
+  position: relative;
+}
+.make{
+  position: absolute;
+  right: 50%;
+  transform: translateX(130%);
+}
+.make form{
+  display: inline-block;
+  margin:5px;
+}
+.prev{
+  position: absolute;
+  left: 15%;
+  top: 35px;
+}
+
+.next{
+  position: absolute;
+  left: 60%;
+  top: 35px;
+}
